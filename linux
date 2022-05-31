@@ -1,0 +1,25 @@
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ cat> animal.txt
+tiger
+bear tiger
+^Z
+[1]+  Stopped                 cat > animal.txt
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ awk '{for(i=1;i<=NF;i++)a[$i]++;}END{for(i in a){print i,a[i];}}'animal.txt
+awk: 1: unexpected character '.'
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ awk'{for(i=1;i<=NF;i++)a[$i]++;}END{for(i in a){print i,a[i];}}'animal.txt
+awk{for(i=1;i<=NF;i++)a[$i]++;}END{for(i in a){print i,a[i];}}animal.txt: command not found
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ awk '{for(i=1;i<=NF;i++)a[$i]++;}END{for(i in a){print i,a[i];}}' animal.txt
+bear 1
+tiger 2
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ cat> animal.txt
+tiger
+bear tiger
+^Z
+[1]+  Stopped                 cat > animal.txt
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ awk '{for(i=1;i<=NF;i++)a[$i]++;}END{for(i in a){print i,a[i];}}'animal.txt
+awk: 1: unexpected character '.'
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ awk'{for(i=1;i<=NF;i++)a[$i]++;}END{for(i in a){print i,a[i];}}'animal.txt
+awk{for(i=1;i<=NF;i++)a[$i]++;}END{for(i in a){print i,a[i];}}animal.txt: command not found
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ awk '{for(i=1;i<=NF;i++)a[$i]++;}END{for(i in a){print i,a[i];}}' animal.txt
+bear 1
+tiger 2
+
