@@ -1,0 +1,14 @@
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ sudo apt install qemu-kvm libvirt-daemon-system libvert-clients bridge-utils virtinst virt-manager
+[sudo] password for mca35: 
+Sorry, try again.
+[sudo] password for mca35: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Note, selecting 'libvirt-bin' instead of 'libvirt-daemon-system'
+E: Unable to locate package libvert-clients
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ lsmod | grep -i kvm
+kvm_intel             217088  0
+kvm                   610304  1 kvm_intel
+irqbypass              16384  1 kvm
+(base) mca35@mca35-HP-Pavilion-Desktop-590-p0xxx:~$ 
